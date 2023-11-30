@@ -69,10 +69,12 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 # amp-app
+volta pin node@16.20.2
+volta pin npm@8.19.4
 npm install @aws-amplify/cli
 npm i aws-amplify @aws-amplify/ui-react
-amplify codegen models
 amplify pull --appId d3bcbs3gzzrseh --envName staging
+amplify codegen models
 
 // src/index.js
 import { Amplify } from 'aws-amplify'
