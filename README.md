@@ -69,3 +69,21 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 # amp-app
+npm install @aws-amplify/cli
+npm i aws-amplify @aws-amplify/ui-react
+amplify codegen models
+amplify pull --appId d3bcbs3gzzrseh --envName staging
+
+// src/index.js
+import { Amplify } from 'aws-amplify'
+import config from './aws-exports'
+import { AmplifyProvider } from '@aws-amplify/ui-react'
+import '@aws-amplify/ui-react/styles.css'
+Amplify.configure(config)
+
+/* src/index.css */
+@import url('https://fonts.googleapis.com/css2?family=Inter:slnt,wght@-10..0,100..900&display=swap');
+
+  <AmplifyProvider>
+    <App />
+  </AmplifyProvider>
