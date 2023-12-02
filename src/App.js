@@ -1,12 +1,10 @@
 import logo from './logo.svg';
 import './App.css';
 import {  SocialPostCollection  } from './ui-components';
-
- import { DataStore } from 'aws-amplify/datastore';
+import { DataStore } from 'aws-amplify/datastore';
 import { Note } from './models';
 
 const models = await DataStore.query(Note);
-
 console.log(models);
 
 function App() {
